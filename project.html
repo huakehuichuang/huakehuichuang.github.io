@@ -1,109 +1,233 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>华科慧创｜项目介绍</title>
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{
-      font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;
-      color:#fff;
-      background:
-        radial-gradient(circle at 50% 0%, rgba(0,170,255,0.22), transparent 26%),
-        linear-gradient(180deg,#020817 0%,#04132a 42%,#061f46 72%,#020817 100%);
-    }
-    body::before{
-      content:"";position:fixed;inset:0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-      background-size:40px 40px;opacity:.18;pointer-events:none;
-    }
-    .wrap{width:92%;max-width:1200px;margin:auto;position:relative;z-index:1}
-    .nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
-    .brand{display:flex;align-items:center;gap:14px}
-    .brand img{width:54px;height:54px;border-radius:10px}
-    .brand h1{font-size:22px}
-    .menu{display:flex;gap:24px;flex-wrap:wrap}
-    .menu a{color:#cfe6ff;text-decoration:none}
-    .menu a:hover{color:#fff}
-    .section{
-      background:rgba(8,30,70,0.88);
-      border:1px solid rgba(120,180,255,0.2);
-      border-radius:22px;
-      padding:30px;
-      margin-bottom:22px;
-    }
-    .section h2{font-size:34px;margin-bottom:18px}
-    .section h3{font-size:24px;margin-bottom:14px;color:#7fb9ff}
-    .section p{line-height:2;color:#eaf2ff;font-size:16px;margin-bottom:14px}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .card{
-      background:rgba(255,255,255,0.03);
-      border:1px solid rgba(120,180,255,0.12);
-      border-radius:16px;padding:20px;
-    }
-    .card h4{color:#9fd0ff;font-size:20px;margin-bottom:10px}
-    .card p{margin:0}
-    .footer{text-align:center;color:#8fbaff;font-size:14px;padding:20px 0 40px}
-    @media(max-width:900px){
-      .nav{flex-direction:column;align-items:flex-start;gap:16px}
-      .grid{grid-template-columns:1fr}
-      .section h2{font-size:28px}
-    }
-  </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>项目介绍 - 华科慧创</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(120deg,#071a2d,#0b2e4f,#071a2d);
+color:white;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.2);
+backdrop-filter:blur(8px);
+}
+
+.logo{
+display:flex;
+align-items:center;
+font-size:20px;
+font-weight:bold;
+}
+
+.logo img{
+width:40px;
+margin-right:10px;
+}
+
+.menu a{
+color:white;
+margin-left:30px;
+text-decoration:none;
+opacity:0.85;
+}
+
+.menu a:hover{
+opacity:1;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.card{
+background:rgba(18,46,80,0.7);
+padding:30px;
+margin-bottom:25px;
+border-radius:16px;
+box-shadow:0 0 30px rgba(0,140,255,0.08);
+}
+
+h2{
+color:#7cc6ff;
+margin-bottom:15px;
+}
+
+p{
+line-height:1.9;
+opacity:0.9;
+}
+
+.footer{
+text-align:center;
+padding:30px;
+opacity:0.5;
+}
+
+</style>
+
 </head>
+
+
+
 <body>
-  <div class="wrap">
-    <div class="nav">
-      <div class="brand">
-        <img src="标志.png" alt="华科慧创">
-        <h1>华科慧创</h1>
-      </div>
-      <div class="menu">
-        <a href="index.html">首页</a>
-        <a href="about.html">公司介绍</a>
-        <a href="project.html">项目介绍</a>
-        <a href="team.html">核心团队</a>
-        <a href="contact.html">联系我们</a>
-      </div>
-    </div>
 
-    <div class="section">
-      <h2>国家智能战略工程</h2>
-      <p>华科慧创围绕“芯片—半导体—算力—应用”构建一体化人工智能产业生态体系，强化关键核心技术自主能力，推动产业链安全与可持续发展。</p>
-    </div>
 
-    <div class="section">
-      <h3>战略结构</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>芯片与半导体</h4>
-          <p>推进关键核心技术突破，提升国产化能力，夯实智能时代基础能力。</p>
-        </div>
-        <div class="card">
-          <h4>智能算力</h4>
-          <p>建设高效、安全、可持续的智能计算基础设施，支撑大模型发展。</p>
-        </div>
-        <div class="card">
-          <h4>产业应用</h4>
-          <p>推动人工智能在智慧城市、智能制造、生物科技、数字经济等领域落地。</p>
-        </div>
-        <div class="card">
-          <h4>开放协同</h4>
-          <p>促进科研机构、科技企业及产业资源协同创新，构建开放共创平台。</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="section">
-      <h3>发展目标</h3>
-      <p>发布千亿参数级多模态人工智能模型，推动人工智能技术在更多产业场景实现深度应用，提升科技创新对经济社会发展的支撑能力。</p>
-      <p>通过长期技术积累与产业协同，助力中国智能科技不断迈向更高水平，为实现中华民族伟大复兴提供坚实科技支撑。</p>
-    </div>
+<div class="nav">
 
-    <div class="footer">© 2026 华科慧创</div>
-  </div>
+<div class="logo">
+<img src="标志.png">
+华科慧创
+</div>
+
+<div class="menu">
+
+<a href="index.html">首页</a>
+
+<a href="about.html">公司介绍</a>
+
+<a href="project.html">项目介绍</a>
+
+<a href="team.html">核心团队</a>
+
+<a href="contact.html">联系我们</a>
+
+</div>
+
+</div>
+
+
+
+<div class="container">
+
+
+
+<div class="card">
+
+<h2>国家智能战略工程</h2>
+
+<p>
+
+“华科慧创 · 国家智能战略工程”围绕人工智能关键技术体系建设，聚焦大模型技术、智能算力平台及数据处理能力等方向，推动人工智能技术体系化发展。
+
+项目以构建自主可控的人工智能技术能力为目标，重点布局基础算法能力、大规模模型训练框架及智能应用平台，推动形成具备持续发展能力的技术体系。
+
+通过构建高效协同的技术生态，项目致力于推动人工智能技术在产业中的深度应用，为科技创新与产业升级提供持续支撑。
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>人工智能大模型平台</h2>
+
+<p>
+
+围绕大模型技术发展趋势，项目重点构建具备持续优化能力的智能模型训练体系，通过提升模型理解能力与推理能力，增强智能系统在复杂应用场景中的适应能力。
+
+通过整合数据处理能力与算法能力，逐步形成具有稳定性能与可扩展能力的模型平台，推动人工智能技术在多行业应用中的落地能力。
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>智能算力基础设施</h2>
+
+<p>
+
+算力能力是人工智能发展的核心基础。项目围绕高性能计算资源整合、算力调度优化及数据处理能力提升等方向，构建具备长期发展能力的智能算力平台。
+
+通过优化算力资源配置，提升智能计算效率，为大模型训练及智能应用提供稳定的基础支撑。
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>行业应用解决方案</h2>
+
+<p>
+
+基于人工智能技术能力，项目持续探索智能技术在产业场景中的应用价值，推动人工智能技术在智能制造、数字科技、信息技术服务及数据应用等领域的融合发展。
+
+通过构建行业解决方案体系，促进科技成果向实际应用转化，推动产业效率提升及创新能力增强。
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>技术发展路径</h2>
+
+<p>
+
+项目围绕基础技术研发、平台能力建设及行业应用拓展三大方向，逐步形成协同发展的技术体系。
+
+通过持续优化算法能力与数据能力，推动人工智能技术不断向更高效率、更强泛化能力方向发展，为科技创新提供稳定技术基础。
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>未来发展方向</h2>
+
+<p>
+
+未来，华科慧创将持续推进人工智能技术体系建设，加强技术研发投入与产业协同能力建设，推动形成具备持续创新能力的智能科技生态。
+
+通过不断拓展应用场景与技术能力，公司致力于提升人工智能技术在实体经济中的应用价值，推动科技创新能力持续增强。
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="footer">
+
+© 2026 华科慧创
+
+</div>
+
+
+
 </body>
+
 </html>
